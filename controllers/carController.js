@@ -9,7 +9,7 @@ res.status(201).json({ message: "Car added successfully", car });
 } catch (err) {
 console.error("error addng car",err);
 console.log(req.body);
-res.status(400).json({ message: "Car addition failed" });
+res.status(400).json({ message: "Car addition failed"+err });
 }
 };
 
